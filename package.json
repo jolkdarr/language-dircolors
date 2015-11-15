@@ -1,0 +1,23 @@
+{
+  "name": "dircolors",
+  "main": "",
+  "version": "0.1.0",
+  "description": "Package for .dircolors files",
+  "keywords": [
+      "dircolors"
+  ],
+  "homepage": "https://github.com/jolkdarr/dircolors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jolkdarr/dircolors.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jolkdarr/dircolors/issues"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
