@@ -1,16 +1,22 @@
 {
-  "name": "dircolors",
+  "name": "language-dircolors",
   "main": "",
   "version": "0.2.0",
   "description": "Package for .dircolors files",
-  "keywords": [ "dircolors" ],
+  "keywords": [
+    "dircolors"
+  ],
   "homepage": "https://github.com/jolkdarr/language-dircolors",
   "repository": {
     "type": "git",
     "url": "https://github.com/jolkdarr/language-dircolors.git"
   },
   "license": "MIT",
-  "bugs": { "url": "https://github.com/jolkdarr/language-dircolors/issues" },
-  "engines": { "atom": ">=1.0.0 <2.0.0" },
+  "bugs": {
+    "url": "https://github.com/jolkdarr/language-dircolors/issues"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
   "dependencies": {}
 }
