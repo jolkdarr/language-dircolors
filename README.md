@@ -1,5 +1,5 @@
-# dircolors
+# language-dircolors
 
 Package for ```.dircolors``` files.
 
-![screenshot](/resources/dircolors.png)
+![screenshot](https://github.com/jolkdarr/language-dircolors/raw/master/resources/dircolors.png)
