@@ -1,0 +1,25 @@
+'.source.dircolors':
+  black:
+    prefix: 'black;'
+    body: '30;'
+  red:
+    prefix: 'red;'
+    body: '31;'
+  green:
+    prefix: 'green;'
+    body: '32;'
+  yellow:
+    prefix: 'yellow;'
+    body: '33;'
+  blue:
+    prefix: 'blue;'
+    body: '34;'
+  magenta:
+    prefix: 'magenta;'
+    body: '35;'
+  cyan:
+    prefix: 'cyan;'
+    body: '36;'
+  white:
+    prefix: 'white;'
+    body: '37;'

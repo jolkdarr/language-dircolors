@@ -1,0 +1,25 @@
+'.source.dircolors':
+  bblack:
+    prefix: 'bblack;'
+    body: '40;'
+  bred:
+    prefix: 'bred;'
+    body: '41;'
+  bgreen:
+    prefix: 'bgreen;'
+    body: '42;'
+  byellow:
+    prefix: 'byellow;'
+    body: '43;'
+  bblue:
+    prefix: 'bblue;'
+    body: '44;'
+  bmagenta:
+    prefix: 'bmagenta;'
+    body: '45;'
+  bcyan:
+    prefix: 'bcyan;'
+    body: '46;'
+  bwhite:
+    prefix: 'bwhite;'
+    body: '47;'

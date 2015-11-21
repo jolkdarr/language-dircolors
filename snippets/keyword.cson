@@ -1,37 +1,37 @@
 '.source.dircolors':
-  'term':
+  term:
     'prefix': 'T'
     'body': 'TERM $1\n'
-  'color':
+  color:
     'prefix': 'C'
     'body': 'COLOR $1\n'
-  'eightbit':
+  eightbit:
     'prefix': 'E'
     'body': 'EIGHTBIT $1\n'
-  'option':
+  option:
     'prefix': 'O'
     'body': 'OPTION $1\n'
-  'normal':
+  normal:
     'prefix': 'N'
-    'body': 'NORMAL $1\n'
-  'file':
+    'body': 'NORMAL 00\n'
+  file:
     'prefix': 'F'
     'body': 'FILE $1\n'
-  'dir':
+  dir:
     'prefix': 'D'
     'body': 'DIR $1\n'
-  'link':
+  link:
     'prefix': 'L'
     'body': 'LINK $1\n'
-  'missing':
+  missing:
     'prefix': 'M'
     'body': 'MISSING $1\n'
-  'sock':
+  sock:
     'prefix': 'S'
     'body': 'SOCK $1\n'
-  'blk':
+  blk:
     'prefix': 'B'
     'body': 'BLK $1\n'
-  'exec':
+  exec:
     'prefix': 'X'
     'body': 'EXEC $1\n'
