@@ -10,3 +10,6 @@
 - New snippets for text colors,
 - New snippets for background colors,
 - New snippets for attributes.
+
+## 1.2.0 - New Release
+- Block- or single line comments may be toggled via keyboard shortcut.
