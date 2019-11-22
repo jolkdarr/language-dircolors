@@ -13,3 +13,6 @@
 
 ## 1.2.0 - New Release
 - Block- or single line comments may be toggled via keyboard shortcut.
+
+## 1.3.0 - New Release
+- Add missing keywords [ObserverOfTime]
