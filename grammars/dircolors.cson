@@ -28,7 +28,22 @@ patterns: [
           name: "constant.numeric.dircolors"
       }
       {
-          match: "\\b(TERM|COLOR|EIGHTBIT|OPTION|NORMAL|NORM|FILE|RESET|DIR|LNK|LINK|SYMLINK|ORPHAN|MISSING|FIFO|PIPE|SOCK|BLK|BLOCK|CHR|CHAR|DOOR|EXEC|LEFT|LEFTCODE|RIGHT|RIGHTCODE|END|ENDCODE|SUID|SETUID|SGID|SETGID|STICKY|OTHER_WRITABLE|OWR|STICKY_OTHER_WRITABLE|OWT|CAPABILITY|MULTIHARDLINK|CLRTOEOL)\\b"
-          name: "keyword.other.dircolors"
+          match: """(?x)
+              ^ (\\s*)
+              (TERM|COLOR|EIGHTBIT|OPTION|NORMAL|NORM|FILE|RESET|DIR|LNK|LINK|SYMLINK|ORPHAN|MISSING
+              |FIFO|PIPE|SOCK|BLK|BLOCK|CHR|CHAR|DOOR|EXEC|LEFT|LEFTCODE|RIGHT|RIGHTCODE|END|ENDCODE
+              |SUID|SETUID|SGID|SETGID|STICKY|OTHER_WRITABLE|OWR|STICKY_OTHER_WRITABLE|OWT|CAPABILITY
+              |MULTIHARDLINK|CLRTOEOL)
+              (?=\\s|\\#|$)
+          """
+          captures:
+              1: name: "punctuation.whitespace.comment.leading.dircolors"
+              2: name: "keyword.other.dircolors"
+      }
+      {
+          match: "^(\\s*)([^\\s#]+)"
+          captures:
+              1: name: "punctuation.whitespace.comment.leading.dircolors"
+              2: name: "keyword.other.extension.dircolors"
       }
   ]
