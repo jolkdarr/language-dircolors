@@ -28,6 +28,10 @@ patterns: [
           name: "constant.numeric.dircolors"
       }
       {
+          match: ";"
+          name: "punctuation.delimiter.semicolon.dircolors"
+      }
+      {
           match: """(?x)
               ^ (\\s*)
               (TERM|COLOR|EIGHTBIT|OPTION|NORMAL|NORM|FILE|RESET|DIR|LNK|LINK|SYMLINK|ORPHAN|MISSING
