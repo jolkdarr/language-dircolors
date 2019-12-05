@@ -1,6 +1,11 @@
 scopeName: 'source.dircolors'
 name: 'dircolors'
-fileTypes: [ 'dircolors' ]
+fileTypes: [
+    "dircolors"
+    "dir_colors"
+    "_dir_colors"
+    "_dircolors"
+]
 patterns: [
       {
         begin: '(^\\s+)?(?<!\\S)(?=#)(?!#\\{)'
