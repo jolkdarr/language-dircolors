@@ -37,6 +37,27 @@ patterns: [
           name: "punctuation.delimiter.semicolon.dircolors"
       }
       {
+          match: "^(\\s*)(TERM)\\s+((?:[^\\s#\\\\]|\\\\.)+)"
+          captures:
+              1: name: "punctuation.whitespace.comment.leading.dircolors"
+              2: name: "keyword.other.dircolors"
+              3: name: "variable.parameter.function.terminal-type.dircolors"
+      }
+      {
+          match: "^(\\s*)(COLOR|EIGHTBIT)\\s+(all|none|no|tty|yes)\\b"
+          captures:
+              1: name: "punctuation.whitespace.comment.leading.dircolors"
+              2: name: "keyword.other.dircolors"
+              3: name: "constant.language.${3:/downcase}.dircolors"
+      }
+      {
+          match: "^(\\s*)(OPTIONS)\\s+((?:[^\\s#\\\\]|\\\\.)+)"
+          captures:
+              1: name: "punctuation.whitespace.comment.leading.dircolors"
+              2: name: "keyword.other.dircolors"
+              3: patterns: [include: "source.opts"]
+      }
+      {
           match: """(?x)
               ^ (\\s*)
               (TERM|COLOR|EIGHTBIT|OPTION|NORMAL|NORM|FILE|RESET|DIR|LNK|LINK|SYMLINK|ORPHAN|MISSING
