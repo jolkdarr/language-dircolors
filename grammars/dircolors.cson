@@ -45,9 +45,35 @@ patterns: [
               2: name: "keyword.other.dircolors"
       }
       {
-          match: "^(\\s*)([^\\s#]+)"
+          match: "^(\\s*)((?:[^\\s#\\\\]|\\\\.)+)"
           captures:
-              1: name: "punctuation.whitespace.comment.leading.dircolors"
-              2: name: "keyword.other.extension.dircolors"
+              1:
+                name: "punctuation.whitespace.comment.leading.dircolors"
+              2:
+                name: "keyword.other.extension.dircolors"
+                patterns: [include: "#escape"]
+      }
+      {
+          include: "#escape"
       }
   ]
+repository:
+    escape:
+        patterns: [
+            {
+                name: "constant.character.escape.caret-notation.dircolors"
+                match: "\\^[?@A-Za-z\\[\\\\\\]^_]"
+            }
+            {
+                name: "constant.character.escape.codepoint.hexadecimal.dircolors"
+                match: "\\\\x[0-9A-Fa-f]{1,3}"
+            }
+            {
+                name: "constant.character.escape.codepoint.octal.dircolors"
+                match: "\\\\[0-7]{1,3}"
+            }
+            {
+                name: "constant.character.escape.dircolors"
+                match: "\\\\[abefnrtv?\\_^#]"
+            }
+        ]
