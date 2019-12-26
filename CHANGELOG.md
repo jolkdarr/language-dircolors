@@ -16,3 +16,6 @@
 
 ## 1.3.0 - New Release
 - Add missing keywords [ObserverOfTime]
+
+## 1.4.0 - New Release
+- Improve accuracy and coverage of grammar [John Gardner]
